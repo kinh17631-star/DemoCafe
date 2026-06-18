@@ -16,4 +16,25 @@ export default function Home() {
           </h1>
           
           <p className="text-lg md:text-2xl text-gray-300 mb-10 max-w-2xl mx-auto">
-            Meerut's most premium dark cafe and lounge. Perfect coffee, unforgettable
+            Meerut's most premium dark cafe and lounge. Perfect coffee, unforgettable ambiance.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-5 justify-center">
+            {/* पहला बटन - आउटलाइन वाला */}
+            <a href="#menu" className="px-8 py-3 bg-transparent border-2 border-purple-500 text-purple-400 font-bold rounded-md hover:bg-purple-500 hover:text-white transition-all duration-300">
+              Explore Menu
+            </a>
+            
+            {/* दूसरा बटन - ग्लो वाला */}
+            <a href="#contact" className="px-8 py-3 bg-purple-600 text-white font-bold rounded-md hover:bg-purple-700 transition-all duration-300 shadow-[0_0_15px_rgba(168,85,247,0.5)]">
+              Book a Table
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* आने वाले समय में हम यहाँ 'Our Menu' और 'Gallery' सेक्शन जोड़ सकते हैं */}
+      
+    </div>
+  );
+}
