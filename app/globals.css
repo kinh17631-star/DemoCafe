@@ -1,1 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+:root {
+  /* कैफे के लिए एकदम डार्क और डीप ब्लैक बैकग्राउंड */
+  --background: #050505; 
+  --foreground: #ededed;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  /* फॉन्ट को एकदम स्मूथ और क्लीन दिखाने के लिए */
+  -webkit-font-smoothing: antialiased; 
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* पूरी वेबसाइट में स्मूथ स्क्रॉलिंग के लिए */
+html {
+  scroll-behavior: smooth;
+}
+
+/* एक कस्टम क्लास ताकि हम बटन्स या टेक्स्ट पर 'ग्लो' इफ़ेक्ट लगा सकें */
+.glow-effect {
+  text-shadow: 0 0 10px rgba(168, 85, 247, 0.7);
+}
